@@ -162,3 +162,9 @@ void displayStr(int x, int y, int len, unsigned char *c)
     }
   }
 }
+
+void displayStrC(int row, int len, unsigned char *c)
+{
+	int x=64-((len*8)/2);
+	displayStr(x,row,len,c);
+}
